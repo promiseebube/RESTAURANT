@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RESTURANT ORDERING APP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <button id="homeBtn">Home</button>
+    <button id="cartBtn">Cart</button>
+  </nav>
+  <section id="homePage">
+    <h1>Menu</h1>
+    <div class="food-item" data-name="Pizza" data-price="10">
+      <img src="image/pizza.png" alt="Pizza">
+      <p>Pizza - $10</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="food-item" data-name="Burger" data-price="8">
+      <img src="image/burger.png" alt="Burger">
+      <p>Burger - $8</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="food-item" data-name="Pasta" data-price="12">
+      <img src="image/pasta.png" alt="Pasta">
+      <p>Pasta - $12</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="food-item" data-name="Salad" data-price="7">
+      <img src="image/sa.png" alt="Salad">
+      <p>Salad - $7</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="food-item" data-name="Sushi" data-price="15">
+      <img src="image/sushi.png" alt="Sushi">
+      <p>Sushi - $15</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="food-item" data-name="Ice Cream" data-price="5">
+      <img src="image/ice.png" alt="Ice Cream">
+      <p>Ice Cream - $5</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </section>
+  <section id="cartPage" style="display: none;">
+    <h1>Your Cart</h1>
+    <ul id="cartList"></ul>
+    <p>Total: $<span id="totalPrice">0</span></p>
+  </section>
+  <script src="re.js"></script>
+</body>
+</html>
